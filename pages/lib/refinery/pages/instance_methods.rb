@@ -25,7 +25,6 @@ module Refinery
         ::Refinery::Menu.new(::Refinery::Page.fast_menu)
       end
 
-    protected
       def render(*args)
         present(@page) unless admin? || @meta.present?
         super
